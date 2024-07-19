@@ -52,19 +52,26 @@
 
                                     <div class="form-group">
                                         <button type="button" class="btn btn-github btn-user btn-block">
-                                            <i class="fab fa-github fa-fw"></i> {{ __('Login with GitHub') }}
+                                            <a class="text-gradient" href="https://github.com/"><i class="bi bi-github"></i>
+                                                <i class="fab fa-github fa-fw"></i> {{ __('Login with GitHub') }}
+                                            </a>
+                                            
                                         </button>
                                     </div>
 
                                     <div class="form-group">
                                         <button type="button" class="btn btn-twitter btn-user btn-block">
-                                            <i class="fab fa-twitter fa-fw"></i> {{ __('Login with Twitter') }}
+                                            <a class="text-gradient" href="https://x.com/i/flow/login"><i class="bi bi-twitter"></i>
+                                                <i class="fab fa-twitter fa-fw"></i> {{ __('Login with Twitter') }}
+                                            </a>                                          
                                         </button>
                                     </div>
 
                                     <div class="form-group">
                                         <button type="button" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> {{ __('Login with Facebook') }}
+                                            <a class="text-gradient" href="https://www.facebook.com/sila.thodelater?mibextid=ZbWKwL"><i class="bi bi-facebook"></i>
+                                                <i class="fab fa-facebook-f fa-fw"></i> {{ __('Login with Facebook') }}
+                                            </a>
                                         </button>
                                     </div>
                                 </form>

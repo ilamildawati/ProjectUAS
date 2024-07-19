@@ -53,6 +53,14 @@
                 <span>{{ __('Contact') }}</span></a>
         </li>
 
+                <!-- Nav Item - Jobs -->
+                <li class="nav-item {{ Nav::isRoute('jobs.index') }}">
+                    <a class="nav-link" href="{{ route('jobs.index') }}">
+                        <i class="fas fa-fw fa-user"></i>
+                        <span>{{ __('Jobs') }}</span>
+                    </a>
+                </li>        
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 

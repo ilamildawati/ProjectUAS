@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\sendEmail;
+use App\Http\Controllers\JobController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +51,17 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/send-email', [Controller::class, 'sendEmail'])->name('send.email');
+
+Route::controller(JobController::class)->prefix('jobs')->group(function () {
+    Route::get('/admin/jobs', 'index')->name('jobs.index');
+    Route::get('/admin/jobs/create', 'create')->name('jobs.create');
+    Route::post('/admin/jobs/store', 'store')->name('jobs.store');
+    Route::get('/admin/jobs/edit/{id}', 'edit')->name('jobs.edit');
+    Route::put('/admin/jobs/edit/{id}', 'update')->name('jobs.update');
+    Route::delete('/admin/jobs/destroy/{id}', 'destroy')->name('jobs.destroy');
+});
+
+
+
 
 

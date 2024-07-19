@@ -43,9 +43,9 @@
                                 <div
                                     class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder"
-                                        href="#!">{{ $content->button_left }}</a>
+                                        href="profil">{{ $content->button_left }}</a>
                                     <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                        href="#!">{{ $content->button_right }}</a>
+                                        href="contact">{{ $content->button_right }}</a>
                                 </div>
                             @else
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
@@ -109,9 +109,9 @@
                                         class="text-gradient">{{ $content->about_me_title }}</span></h2>
                                 <p class="lead fw-light text-center mb-4">{{ $content->about_me_description }}</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href="https://www.tiktok.com/@iyyya068?_r=1&_d=ee4dcgm1319jef&sec_uid=MS4wLjABAAAAdHmiH27wA4X5FODQQHLdGvOWBeg9RsNR38S8i4A7paA3bAPLjPM8pDJ6Jo62tPil&share_author_id=6662658214541443074&sharer_language=id&source=h5_t&u_code=d50ehmle634j9b&timestamp=1719930995&user_id=6662658214541443074&sec_user_id=MS4wLjABAAAAdHmiH27wA4X5FODQQHLdGvOWBeg9RsNR38S8i4A7paA3bAPLjPM8pDJ6Jo62tPil&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7385495649925908230&share_link_id=da31f2a8-5926-475b-bd45-d344460f43d6&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"><i class="bi bi-tiktok"></i></a>
+                                    <a class="text-gradient" href="https://www.facebook.com/sila.thodelater?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                                    <a class="text-gradient" href="https://www.instagram.com/sila_mildawati?igsh=MWV4YzIzcW8wZGFnaA=="><i class="bi bi-instagram"></i></a>
                                 </div>
                             </div>
                         @else
@@ -124,9 +124,9 @@
                                     cumque
                                     officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href="">https://www.tiktok.com/@iyyya068?_r=1&_d=ee4dcgm1319jef&sec_uid=MS4wLjABAAAAdHmiH27wA4X5FODQQHLdGvOWBeg9RsNR38S8i4A7paA3bAPLjPM8pDJ6Jo62tPil&share_author_id=6662658214541443074&sharer_language=id&source=h5_t&u_code=d50ehmle634j9b&timestamp=1719930995&user_id=6662658214541443074&sec_user_id=MS4wLjABAAAAdHmiH27wA4X5FODQQHLdGvOWBeg9RsNR38S8i4A7paA3bAPLjPM8pDJ6Jo62tPil&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7385495649925908230&share_link_id=da31f2a8-5926-475b-bd45-d344460f43d6&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1<i class="bi bi-tiktok"></i></a>
+                                    <a class="text-gradient" href="https://www.facebook.com/sila.thodelater?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                                    <a class="text-gradient" href="https://www.instagram.com/sila_mildawati?igsh=MWV4YzIzcW8wZGFnaA=="><i class="bi bi-instagram"></i></a>
                                 </div>
                             </div>
                         @endif
@@ -139,8 +139,8 @@
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Your Website 2023</div>
+                <div class="col-auto">                    <span>Copyright &copy; <a href="https://www.mercubuana-yogya.ac.id/" target="_blank">UMBY</a> {{ now()->year }}</span>
+
                 </div>
                 <div class="col-auto">
                     <a class="small" href="#!">Privacy</a>

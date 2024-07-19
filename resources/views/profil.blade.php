@@ -24,7 +24,7 @@
             <!-- Page Content-->
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Profile</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -34,22 +34,23 @@
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
+        
                             </div>
-                            @foreach ($data as $x)
+                            @foreach ($jobs as $jb)
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">{{ $x->name }}</div>
-                                                <div class="small fw-bolder">{{ $x->last_name }}</div>
-                                                <div class="small text-muted">{{ $x->email }}</div>
+                                                <div class="text-primary fw-bolder mb-2">{{ $jb->starting_year }} - {{ $jb->year_end}}</div>
+                                                <div class="small fw-bolder">{{ $jb->field }}</div>
+                                                <div class="small text-muted">{{ $jb->company }}</div>
+                                                <div class="small text-muted">{{ $jb->address }}</div>
                                             </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>{{ $jb->work_description }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -65,18 +66,20 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
+                                                <div class="text-secondary fw-bolder mb-2">2022 - 2024</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
+                                                    <div class="small fw-bolder">UMBY</div>
                                                     <div class="small text-muted">Fairfield, NY</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
-                                                </div>
+                                                    <div class="small text-muted">Mahasiswi</div>
+                                                    <div class="small text-muted">Sistem Informasi</div>
+                                                </div>                                                                                                      
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div>seorang mahasiswa aktif yang penuh semangat dan dedikasi.
+                                            Saya memiliki latar belakang pendidikan di bidang sistem informasi dan saat ini terlibat 
+                                            dalam berbagai kegiatan organisasi di kampus.</div></div>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +157,9 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+                        <span>Copyright &copy; <a href="https://www.mercubuana-yogya.ac.id/" target="_blank">UMBY</a> {{ now()->year }}</span>
+                    </div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>

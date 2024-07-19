@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Job;
 
 class Controller extends BaseController
 {
@@ -18,13 +19,8 @@ class Controller extends BaseController
 
     public function read()
     {
-        $data = User::all();
-        return view('profil', [
-            'id' => "id",
-            'nama' => "nama",
-            'deskripsi' => "deskripsi",
-            'data' => $data,
-        ]);
+        $jobs = Job::all();
+        return view('profil', compact('jobs'));
     }
 
     public function index()
@@ -63,3 +59,4 @@ class Controller extends BaseController
         return redirect()->route('contact.public')->with('status', 'Email berhasil dikirim!');
     }
 }
+
